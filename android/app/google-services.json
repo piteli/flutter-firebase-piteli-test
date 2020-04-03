@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "709072762439",
+    "firebase_url": "https://flutter-with-firebase-f6f5c.firebaseio.com",
+    "project_id": "flutter-with-firebase-f6f5c",
+    "storage_bucket": "flutter-with-firebase-f6f5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709072762439:android:c91f5ef19bc7ab40dfe362",
+        "android_client_info": {
+          "package_name": "com.piteli.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709072762439-emgj2fs0vrits0s8i19mrmpjdtnuaa7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvzxkyhM475QrxJTVuvWGQcEh_8miDuJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709072762439-emgj2fs0vrits0s8i19mrmpjdtnuaa7a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
