@@ -77,25 +77,31 @@ class _HomeState extends State<Home> {
       body : new ListView(
         children : <Widget>[
           new Container(
-            height : 250,
+            height : 200,
             child : new ListView.builder(
               itemCount: snapshot.length,
               itemBuilder: (context, index){
                 return Card(
                   elevation: 10.0,
-                  child: new Column(
-                      children : <Widget>[
-                        new ClipRReact(
-                          borderRadius : new BorderRadius.circular(10.0),
-                          child : new Image.network(snapshot[index].data["url"],
-                            height : 180.0,
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                        new SizedBox(height : 10.0,),
-                        new Text(snapshot[index].data["title"])
-                      ]
-                  ),
+                    margin : EdgeInsets.all(10.0),
+                    child: new Container(
+                        margin : EdgeInsets.all(10.0),
+                        child : new Column(
+                            children : <Widget>[
+                              new ClipRReact(
+                                borderRadius : new BorderRadius.circular(10.0),
+                                child : new Image.network(snapshot[index].data["url"],
+                                  height : 120.0,
+                                  width : 120.0,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              new SizedBox(height : 10.0,),
+                              new Text(snapshot[index].data["title"]),
+                              style : TextStyle(fontSize : 19.0, color : Colors.purple)
+                            ]
+                        )
+                )
                 )
               },
             )
