@@ -123,7 +123,13 @@ class _HomeState extends State<Home> {
             child : new ListView.builder(
               itemCount : sdSnapshot.length,
               itemBuilder: (context, index){
-
+                return Card(
+                  elevation : 7.0,
+                  margin : EdgeIssets.all(10.0),
+                  child : new Column(
+                    
+                  )
+                )
               }
             )
           )
