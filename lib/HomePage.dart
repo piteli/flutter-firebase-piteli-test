@@ -126,8 +126,26 @@ class _HomeState extends State<Home> {
                 return Card(
                   elevation : 7.0,
                   margin : EdgeIssets.all(10.0),
-                  child : new Column(
-                    
+                  child : new Container(
+                      children : <Widget>[
+                        new Row(
+                          children : <Widget>[
+                            new CircularAvatar(
+                              child : new Text(sdSnapshot[index].data['title'][0]),
+                              backgroundColor : Colors.purple,
+                              foregroundColor : Colors.white,
+                            ),
+                            new SizedBox(width : 10.0),
+                            new Text(sdSnapshot[index].data['title']),
+                            style : TextStyle(fontSize : 20.0, color : Colors.purple),
+                          ]
+                        ),
+                        new SizedBox(height: 10.0),
+                        new Column(
+                          children : <Widget>[
+                          ]
+                        )
+                      ]
                   )
                 )
               }
