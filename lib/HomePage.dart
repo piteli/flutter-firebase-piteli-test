@@ -143,6 +143,10 @@ class _HomeState extends State<Home> {
                         new SizedBox(height: 10.0),
                         new Column(
                           children : <Widget>[
+                            new ClipRRect(
+                              borderRadius : BorderRadius.circular(15.0),
+                              child : new Image.network(sdSnapshot[index].data["url"]),
+                            )
                           ]
                         )
                       ]
