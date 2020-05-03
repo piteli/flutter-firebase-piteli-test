@@ -158,8 +158,8 @@ class _HomeState extends State<Home> {
                           mainAxisAlignment : MainAxisAlignment.spaceBetween,
                           children : <Widget>[
                             new Icon(Icons.thumb_up, color : Colors.purple),
-                            new Icon(Icons.share, color : Colors.black),
-                            new Icon(Icons.thumb_down, color : Colors.red),
+                            new Icon(Icons.share, color : Colors.green),
+                            new Icon(Icons.thumb_down, color : Colors.yellow),
                           ]
                         )
                       ]
