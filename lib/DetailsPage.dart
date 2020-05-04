@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class DetailsPage extends StatefulWidget {
+
+  DocumentSnapshot snapshot;
+
+  DetailPage({this.snapshot});
+
   @override
   _DetailsPageState createState() => _DetailsPageState();
 }

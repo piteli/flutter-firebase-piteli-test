@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:async';
+import 'package:flutter_firebase_backendapp/DetailsPage.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -35,6 +36,12 @@ class _HomeState extends State<Home> {
     }
 
     super.initState();
+  }
+
+  passData(DocumentSnapshot snap){
+
+    Navigator.of(context).push(new MaterialPageRoute(builder : (context) => DetailPage(s)))
+
   }
 
 
