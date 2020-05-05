@@ -40,7 +40,7 @@ class _HomeState extends State<Home> {
 
   passData(DocumentSnapshot snap){
 
-    Navigator.of(context).push(new MaterialPageRoute(builder : (context) => DetailPage(s)))
+    Navigator.of(context).push(new MaterialPageRoute(builder : (context) => DetailPage(snapshot : snap)))
 
   }
 
@@ -144,8 +144,13 @@ class _HomeState extends State<Home> {
                               foregroundColor : Colors.white,
                             ),
                             new SizedBox(width : 10.0),
-                            new Text(sdSnapshot[index].data['title']),
-                            style : TextStyle(fontSize : 20.0, color : Colors.purple),
+                            new InkWell(
+                              child : new Text(sdSnapshot[index].data['title']),
+                              style : TextStyle(fontSize : 20.0, color : Colors.purple),
+                            ),
+                            onTap : (){
+                              passData(sdSnapshot[index])
+                            },
                           ]
                         ),
                         new SizedBox(height: 10.0),
