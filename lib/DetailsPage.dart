@@ -22,18 +22,24 @@ class _DetailsPageState extends State<DetailsPage> {
       body : new ListView(
         children : <Widget>[
           new Container(
-            margin : EdgeInsets.all(10.0),
-            child : new Row(
-              children : <Widget>[
-                new CircleAvatar(
-                  child: new Text(widget.snapshot.data['title'][0]),
-                  backgroundColor : Colors.green,
-                  foregroundColor : Colors.white,
-                ),
-                new SizedBox(width : 10.0,),
-                new Text(widget.snapshot.data["title"]),
-                style : TextStyle(fontSize : 21.0, color : Colors.green)
-              ]
+            margin : EdgeInsets.all(5.0),
+            child : new Card(
+                elevation : 9.0,
+                child : new Container(
+                    padding : EdgeInsets.all(10.0),
+                    child : new Row(
+                        children : <Widget>[
+                          new CircleAvatar(
+                            child: new Text(widget.snapshot.data['title'][0]),
+                            backgroundColor : Colors.green,
+                            foregroundColor : Colors.white,
+                          ),
+                          new SizedBox(width : 10.0,),
+                          new Text(widget.snapshot.data["title"]),
+                          style : TextStyle(fontSize : 21.0, color : Colors.green)
+                        ]
+                    )
+                )
             )
           )
         ]
