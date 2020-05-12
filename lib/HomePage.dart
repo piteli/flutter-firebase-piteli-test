@@ -179,6 +179,15 @@ class _HomeState extends State<Home> {
                 )
               }
             )
+          ),
+          new Container(
+            margin : new ClipRReact(
+              borderRadius : new BorderRadius.circular(10.0),
+              child : new Image.network(widget.snapshot.data['url']),
+              height : 200.0,
+              width : MediaQuery.of(context).size.width,
+              fit : BoxFit.cover
+            )
           )
         ]
       )
