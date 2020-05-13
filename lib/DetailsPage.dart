@@ -41,6 +41,15 @@ class _DetailsPageState extends State<DetailsPage> {
                     )
                 )
             )
+          ),
+          new Container(
+            margin : EdgeInsets.all(10.0),
+            child : new ClipRRect(
+              borderRadius : new BorderRadius.circular(10.0),
+              child : new Image.network(widget.snapshot.data["url"]),
+              height : MediaQuery.of(context).size.width,
+              fit : BoxFit.cover,
+            )
           )
         ]
       )
